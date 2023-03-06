@@ -6,22 +6,22 @@ Run command "npm install" in root directory to install the node modules:
 
 Choose the app to run by modifying the line located in index.js:
 ```
-import App from './ex73';
+import App from './GraphFormer';
 ```
 
 In the project directory (src), you can run "npm start" to run the app. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Files to ignore in src directory (not assignments):
-texts.json
-translations.json
-logo.svg
-brush.png
-brush.png
-App.test
-myowncss.css
-App.css
-App.js
-reportWebVitals.js
-serviceWorker.js
-setupTest.js
-PieChart.js
+- texts.json
+- translations.json
+- logo.svg
+- brush.png
+- brush.png
+- App.test
+- myowncss.css
+- App.css
+- App.js
+- reportWebVitals.js
+- serviceWorker.js
+- setupTest.js
+- PieChart.js

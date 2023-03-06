@@ -5,8 +5,8 @@ User selects the point of the image by clicking it with mouse. User defines rest
 Demo1 picture shows the result when the ocean in the picture is clicked and when the intensity value difference is set to 5 but total difference is not set at all. Demo2 picture shows the result when the total difference is set to 25.  
 
 The FXM-files should be ignored. Own code is located in files:
-DynArrStack.java
-Harkka2020.java
-WeightedGraph.java
+- DynArrStack.java
+- Harkka2020.java
+- WeightedGraph.java
 
 The GUI has not been implemented by me. 

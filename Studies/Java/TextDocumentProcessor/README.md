@@ -32,10 +32,10 @@ The "echo" command starts or stops command echoing. Echoing means that the progr
 The "quit" command exits the program. The command does not take any parameters.
 
 Own code is located in files:
-dokumentit/Dokumentti.java
-dokumentit/Uutinen.java
-dokumentit/Vitsi.java
-kayttoliittyma/Kayttoliittyma.java
-kokoelma/Kokoelma.java
-omalista/OmaLista
-Oope2HT.java
+- dokumentit/Dokumentti.java
+- dokumentit/Uutinen.java
+- dokumentit/Vitsi.java
+- kayttoliittyma/Kayttoliittyma.java
+- kokoelma/Kokoelma.java
+- omalista/OmaLista
+- Oope2HT.java

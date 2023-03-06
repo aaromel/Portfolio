@@ -1,0 +1,14 @@
+{
+	"en": {
+		"DATE_IS": "Date is",
+		"NUMBER_IS": "Number is",
+		"BALANCE_IS": "Balance is",
+		"PERCENTAGE_IS": "Percentage is"
+	},
+	"fi": {
+		"DATE_IS": "Päivä on",
+		"NUMBER_IS": "Nummero on",
+		"BALANCE_IS": "Saldo on",
+		"PERCENTAGE_IS": "Prosentit ovat"
+	}
+}

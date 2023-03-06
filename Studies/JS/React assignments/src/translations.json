@@ -1,0 +1,16 @@
+{
+	"en": {
+		"REVERSER": "Reverser",
+		"INPUT": "Input:",
+		"REVERSED": "Reversed:",
+        "ENGLISH": "English",
+        "FINNISH": "Finnish"
+	},
+	"fi": {
+		"REVERSER": "Kääntäjä",
+		"INPUT": "Syöte:",
+		"REVERSED": "Käännetty:",
+        "ENGLISH": "Englanti",
+        "FINNISH": "Suomi"
+	}
+}

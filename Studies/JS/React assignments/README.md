@@ -11,6 +11,8 @@ import App from './GraphFormer';
 
 In the project directory (src), you can run "npm start" to run the app. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+The assignments include my own code, so it isn't marked with comments separately. 
+
 Files to ignore in src directory (not assignments):
 - texts.json
 - translations.json

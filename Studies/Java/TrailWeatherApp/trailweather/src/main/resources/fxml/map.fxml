@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.3" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.trailweather.GenericUIController">
+   <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <TextField fx:id="searchText" layoutX="18.0" layoutY="17.0" promptText="Search..." />
+                <Button fx:id="searchButton" layoutX="180.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleClick" prefHeight="25.0" prefWidth="38.0" text="Go" />
+                <Label fx:id="notification" layoutX="22.0" layoutY="47.0" text="">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Label>
+                <Button fx:id="forecastButton" layoutX="18.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Open Forecast"/>
+                <!--Somewhere here comes: fx:include source="forecast.fxml" /-->
+                <Accordion layoutX="18.0" layoutY="110.0" prefHeight="414.0" prefWidth="222.0">
+                    <panes>
+                        <!-- Might need to be separated into own invidual fxml components? -->
+                        <TitledPane prefHeight="300.0" prefWidth="200.0" text="Forecast Settings">
+                            <content>
+                                <fx:include source="settingsview.fxml" />
+                            </content>
+                        </TitledPane>
+                        <TitledPane text="Maps">
+                            <content>
+                                <fx:include source="tiles.fxml" />
+                            </content>
+                        </TitledPane>
+                        <TitledPane prefHeight="300.0" prefWidth="200.0" text="Places">
+                            <content>
+                                <Pane prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <fx:include source="listview.fxml" />
+                                    </children>
+                                </Pane>
+                            </content>
+                        </TitledPane>
+                    </panes>
+                </Accordion>
+                <Button fx:id="savePlaceButton" layoutX="18.0" layoutY="559.0" mnemonicParsing="false" onAction="#handleSavePlace" prefHeight="25.0" prefWidth="200.0" text="Save place" />
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <fx:include source="mappane.fxml" />
+                <Pane fx:id="mapPane1" layoutX="1.0" layoutY="406.0" prefHeight="193.0" prefWidth="555.0">
+                    <children>
+                        <Label fx:id="locationLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="555.0" text="Double click to select a location">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <TitledPane fx:id="mapPane1" text="Current weather info" layoutX="1.0" layoutY="450.0" prefHeight="143.0" prefWidth="555.0">
+                    <ListView fx:id="weatherListView" prefHeight="100.0" prefWidth="200.0">
+                        <HBox>
+                            <Label fx:id="temperatureLabel" text=""/>
+                        </HBox>
+                        <HBox>
+                            <Label fx:id="pressureLabel" text=""/>
+                        </HBox>
+                        <HBox>
+                            <Label fx:id="humidityLabel" text=""/>
+                        </HBox>
+                        <HBox>
+                            <Label fx:id="windspeedLabel" text=""/>
+                        </HBox>
+                        <HBox>
+                            <Label fx:id="rainVolumeLabel" text=""/>
+                        </HBox>
+                    </ListView>
+                </TitledPane>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

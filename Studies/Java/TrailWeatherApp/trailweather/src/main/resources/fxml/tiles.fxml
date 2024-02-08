@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ToggleGroup?>
+
+
+<VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.trailweather.TileSelectionController">
+    <children>
+        <fx:define>
+            <ToggleGroup fx:id="tileGroup" />
+        </fx:define>
+        <RadioButton fx:id="mtbRadioButton" selected="true" mnemonicParsing="false" text="MTB" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+        <RadioButton fx:id="d3MtbRadioButton" mnemonicParsing="false" text="MTB 3D" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+        <RadioButton fx:id="mtbWinterRadioButton" mnemonicParsing="false" text="MTB Winter" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+        <RadioButton fx:id="orienteeringRadioButton" mnemonicParsing="false" text="Orienteering" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+        <RadioButton fx:id="nlsTopoRadioButton" mnemonicParsing="false" text="NLS Topo" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+        <RadioButton fx:id="nlsOrthoRadioButton" mnemonicParsing="false" text="NLS Ortho" toggleGroup="$tileGroup" onAction="#updateMapType"/>
+    </children>
+</VBox>

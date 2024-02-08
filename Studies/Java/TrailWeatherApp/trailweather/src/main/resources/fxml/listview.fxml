@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fi.tuni.trailweather.ListViewController">
+    <ScrollPane fitToWidth="true">
+        <content>
+            <ListView fx:id="placesListView" prefHeight="335.0" prefWidth="215.0"/>
+        </content>
+    </ScrollPane>
+</AnchorPane>
